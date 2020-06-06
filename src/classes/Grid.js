@@ -1,4 +1,4 @@
-export default class Grid {
+class Grid {
     constructor (xCoor, yCoor){
         this.xCoor = xCoor;
         this.yCoor = yCoor;
@@ -6,7 +6,7 @@ export default class Grid {
     }
 
     isOutOfTheGrid (xCoor, yCoor) {
-        return (this.xCoor > xCoor || this.yCoor > yCoor || this.xCoor < 0 || this.yCoor < 0);
+        return (this.xCoor > xCoor || this.yCoor > yCoor || xCoor < 0 || yCoor < 0);
     }
 
     setScents (scent) {
@@ -17,3 +17,5 @@ export default class Grid {
         return this.scents.map(scent=>JSON.stringify(scent)).includes(JSON.stringify(input));
     }
 };
+
+module.exports = Grid;
