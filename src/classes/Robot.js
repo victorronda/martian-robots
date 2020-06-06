@@ -1,13 +1,15 @@
 class Robot {
-    constructor (xCoor, yCoor, robotOrientation, instructions){
+    constructor (xCoor, yCoor, robotOrientation, instructions, isLost){
         this.xCoor = xCoor;
         this.yCoor = yCoor;
         this.robotOrientation = robotOrientation;
         this.instructions = instructions;
+        this.isLost = false;
+
     }
     
     moveForward () {
-        var toDirection = {
+        let toDirection = {
             'N': {xCoor: this.xCoor, yCoor: this.yCoor + 1},
             'S': {xCoor: this.xCoor, yCoor: this.yCoor - 1},
             'E': {xCoor: this.xCoor + 1, yCoor: this.yCoor},
@@ -21,9 +23,9 @@ class Robot {
         const turningDirections = {
             "L": {"N": "W", "W": "S", "S": "E", "E": "N"},
             "R": {"N": "E", "E": "S", "S": "W", "W": "N"}
-        }; 
-        this.robotOrientation = turningDirections.direction[this.robotOrientation];
+        }
+        this.robotOrientation = turningDirections[direction][this.robotOrientation];
     }
-};
+}
 
 module.exports = Robot;

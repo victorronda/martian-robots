@@ -6,7 +6,7 @@ class Grid {
     }
 
     isOutOfTheGrid (xCoor, yCoor) {
-        return (this.xCoor > xCoor || this.yCoor > yCoor || xCoor < 0 || yCoor < 0);
+        return (xCoor > this.xCoor || yCoor > this.yCoor || xCoor < 0 || yCoor < 0);
     }
 
     setScents (scent) {
@@ -16,6 +16,6 @@ class Grid {
     isScented (input){
         return this.scents.map(scent=>JSON.stringify(scent)).includes(JSON.stringify(input));
     }
-};
+}
 
 module.exports = Grid;
