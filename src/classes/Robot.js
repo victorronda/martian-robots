@@ -1,8 +1,8 @@
 class Robot {
-    constructor (xCoor, yCoor, robotOrentation, instructions){
+    constructor (xCoor, yCoor, robotOrientation, instructions){
         this.xCoor = xCoor;
         this.yCoor = yCoor;
-        this.robotOrentation = robotOrentation;
+        this.robotOrientation = robotOrientation;
         this.instructions = instructions;
     }
     
@@ -13,16 +13,16 @@ class Robot {
             'E': {xCoor: this.xCoor + 1, yCoor: this.yCoor},
             'W': {xCoor: this.xCoor - 1, yCoor: this.yCoor}
         };
-        this.xCoor = toDirection[this.robotOrentation].xCoor;
-        this.yCoor = toDirection[this.robotOrentation].yCoor;
+        this.xCoor = toDirection[this.robotOrientation].xCoor;
+        this.yCoor = toDirection[this.robotOrientation].yCoor;
     }
 
     turns ( direction) {
         const turningDirections = {
             "L": {"N": "W", "W": "S", "S": "E", "E": "N"},
             "R": {"N": "E", "E": "S", "S": "W", "W": "N"}
-        } 
-        this.robotOrentation = turningDirections.direction[this.robotOrentation]
+        }; 
+        this.robotOrientation = turningDirections.direction[this.robotOrientation];
     }
 };
 
