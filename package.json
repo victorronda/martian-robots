@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Víctor Ronda",
   "license": "ISC",
-  "description": ""
+  "description": "Technical interview",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
 }

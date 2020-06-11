@@ -77,7 +77,7 @@ This has been a difficult challenge as is not easy to know how to distribute fun
 
 ## Technologies
 
-Node v.14.4.0
+* node v.14.4.0
 
 ## Files structure
 
@@ -93,7 +93,7 @@ src/
 |_ service/
     |_ input_service.js  
 
-app.js
+|_ app.js
 
 ``` 
 

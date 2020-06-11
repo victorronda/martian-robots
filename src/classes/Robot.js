@@ -1,5 +1,5 @@
 class Robot {
-    constructor (xCoor, yCoor, robotOrientation, instructions, isLost){
+    constructor (xCoor, yCoor, robotOrientation, instructions){
         this.xCoor = xCoor;
         this.yCoor = yCoor;
         this.robotOrientation = robotOrientation;
