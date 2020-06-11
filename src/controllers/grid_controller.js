@@ -1,6 +1,6 @@
 const Grid = require('../classes/Grid');
 
-let mapGrid = gridData => {
+let mapGrid = gridData => {	
 	let [ xCoor, yCoor ] = gridData.split(' ');
     checkingErrors(Number(xCoor),Number(yCoor));
     return new Grid(Number(xCoor),Number(yCoor));
