@@ -72,7 +72,7 @@ LLFFFLFLFL
 
 ## Review
 
-This has been a difficult challenge as is not easy to know how to distribute functionality and modularity of the functions for me who has just began as web developer. First I started with a schedule of the problem to understand it. Then I try to get clear which functions and folders should be developed. Finally I make a lot of testing and research to get the challenge done.
+This has been a difficult challenge as is not easy to know how to distribute functionality and modularity of the functions for me who has just began as web developer. First I started with a diagram of the problem to understand it. Then I try to get clear which functions and folders should be developed. Finally I make a lot of testing and research to get the challenge done.
 
 
 ## Technologies
