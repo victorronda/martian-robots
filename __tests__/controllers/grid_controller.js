@@ -1,8 +1,8 @@
-var grid_controller = require('../../src/controllers/grid_controller.js');
-var Grid = require('../../src/classes/Grid.js');
+const grid_controller = require('../../src/controllers/grid_controller.js');
+const Grid = require('../../src/classes/Grid.js');
 
 describe("The grid_controller tests", () => {
-    var result;
+    let result;
 
     describe("The mapGridGrid function", () => {
         it("should return Grid object from raw grid data", () => {
@@ -12,8 +12,9 @@ describe("The grid_controller tests", () => {
         });
     });
 
-    describe("Errors testing", () => {
-        describe("greaterThanFifty function", () => {
+    describe("Errors checking", () => {
+
+        describe("The greaterThanFifty function", () => {
             it("should throw an error if the grid data yCoor is greater than 50", () => {
                 expect(() => {grid_controller.mapGrid('5 51')}).toThrow(new Error("Grid size cannot be greater than 50"));
             });
@@ -23,7 +24,7 @@ describe("The grid_controller tests", () => {
             });
         });
 
-        describe("isLessThanZero function", () => {
+        describe("The isLessThanZero function", () => {
             it("should throw an error if the grid data xCoor is less than 0", () => {
                 expect(() => {grid_controller.mapGrid('-1 5')}).toThrow(new Error("X coordinate or Y coordinate must be greater than 0"));
             });
@@ -33,7 +34,7 @@ describe("The grid_controller tests", () => {
             });
         });
 
-        describe("isNotANumber function", () => {
+        describe("The isNotANumber function", () => {
             it("should throw an error if the grid data xCoor is not a number", () => {
                 expect(() => {grid_controller.mapGrid('k 5')}).toThrow(new Error("X coordinate and Y coordinate must be numbers"));
             });
