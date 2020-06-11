@@ -78,6 +78,7 @@ This has been a difficult challenge as is not easy to know how to distribute fun
 ## Technologies
 
 * node v.14.4.0
+* jest v.26.0.1
 
 ## Files structure
 
@@ -103,4 +104,9 @@ To run application:
 ```
 npm install
 node app.js
+```
+
+To run tests:
+```
+jest
 ```
