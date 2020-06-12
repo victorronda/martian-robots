@@ -110,3 +110,9 @@ To run tests:
 ```
 jest
 ```
+
+#### Running Docker
+```
+docker build -t martian-robots .
+docker run -p 3000:3000 martian-robots
+```
